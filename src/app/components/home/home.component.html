@@ -1,0 +1,414 @@
+<div class="d-flex bd-highlight" style="color: white;">
+  <div *ngIf="!isMobile" class="minheight100 maxwidth10 p-2 bd-highlight  animated fadeInDown">
+    
+    <span style="display: flex;justify-content: center;flex-wrap: wrap;color: rgb(136,146,176);">
+      <div style="border-left: 2px solid rgb(136,146,176);min-height: 70vh;"></div><br>
+      <div style="width: 100%;display: flex;justify-content: center;margin: 10%;" class="100w">
+        <a href="https://github.com/MurariMahith" class="fa fa-github large"></a>
+      </div>
+      <div style="width: 100%;display: flex;justify-content: center;margin: 10%;" class="100w">
+        <a href="mailto:mahithmurari@gmail.com" class="fa fa-google large"></a>
+      </div>
+      <div style="width: 100%;display: flex;justify-content: center;margin: 10%;" class="100w">
+        <a href="https://www.linkedin.com/in/murari-mahith-23b2881a3/" class="fa fa-linkedin large"></a>
+      </div>
+      <div style="width: 100%;display: flex;justify-content: center;margin: 10%;" class="100w">
+        <a href="https://www.instagram.com/murari_mahith_prabhakar/" class="fa fa-instagram large"></a>
+      </div>
+      <div style="width: 100%;display: flex;justify-content: center;margin: 10%;" class="100w" (click)="gototop()">
+        <i class="fa fa-arrow-circle-o-up large"></i>
+      </div>
+    </span>
+
+  </div>
+
+
+  <div class="minheight100 scroll p-2 flex-grow-1 bd-highlight" style="max-height: 100vh;overflow: auto;">
+
+    <span>
+      <div class="introduction animated fadeInRight" id="introduction" style="min-height: 90vh;max-height: 100vh;margin: 25vh 10% 10% 10%">
+        <p class="colorsub" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Hi, my name is</p>
+        <h1 class="colorprimary" style="margin: 0px;font-size: clamp(40px, 8vw, 80px);">Murari Mahith</h1>
+        <h1 class="colorsecondary" style="margin: 0px;font-size: clamp(40px, 8vw, 80px);">I believe in hardwork</h1>
+        <p class="colorsecondary" style="margin-top: 10px;">I am an Associate Software Engineer at Powershool India Pvt Ltd.<br>Apart from my work I like to build web apps.</p>      
+        <br><a class="colorsub btn" (click)="goto('about-me')">About Me</a>
+        <a class="colorsub btn" (click)="goto('experience')">Work and Study</a>
+        <a class="colorsub btn" (click)="goto('projects')">Projects</a>
+        <a class="colorsub btn" (click)="goto('skills')">Skills</a>
+        <a class="colorsub btn" (click)="goto('touch')">Get in touch</a>
+        <a class="colorsub btn" href="https://firebasestorage.googleapis.com/v0/b/mahith-portfolio.appspot.com/o/resume%20latest%208th%20july.pdf?alt=media&token=f82b7224-8a65-4f1a-ae00-4063c3135d1b">Resume</a>
+      </div>
+
+      <span *ngIf="!isMobile">
+                
+        <!--about me-->
+        <div class="about-me" id="about-me" style="max-height: 100vh;margin: 10px 15% 10% 15%">
+          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">01. About me</h3>
+          <div class="d-flex bd-highlight">
+            <div class="p-2 flex-fill bd-highlight colorsecondary">
+              <p style="font-size: large;">Hello! My name is Murari Mahith and I enjoy combining my skillset with my interests. I am working as a fullstack developer in Powerschool since August 2020. <br><br>
+
+              I've graduated from VIT University, Vellore with M.Tech Integrated specialization in Software Engineering. I like to design and work on complex backends without leaving well designed frontends. <br><br>
+
+              I've clubbed my hobby of seeing movies with interest of building webapps and built an app called Suggesto, which recently crossed 1500 downloads on google playstore.Check out more about Suggesto below. <br><br>
+
+              Here are a few technologies I’ve worked on:</p>
+              <div style="display: flex;flex-wrap: wrap;flex-direction: row;gap: 10px;">
+                <p><i class="fa fa-caret-right"></i>Angular</p>
+                <p><i class="fa fa-caret-right"></i>.Net Mvc and WebApi</p>
+                <p><i class="fa fa-caret-right"></i>Django</p>
+                <p><i class="fa fa-caret-right"></i>Express and Node.js</p>
+                <p><i class="fa fa-caret-right"></i>TypeScript and JavaScript</p>
+              </div>
+            </div>
+            <div class="p-2 flex-fill bd-highlight container" style="margin: 5%;">
+              <img class="animated bounce" id="blur-text" style="width: 300px; height: 400px;"  src="../../../assets/images/me.jpeg">
+              <div class="hidden">Murari Mahith</div>
+            </div>
+          </div>
+        </div>
+
+        <!--experience-->
+        <div class="experience" id="experience" style="margin: 10% 15% 10% 15%">
+          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">02. Education and Experience</h3>
+          <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
+            <div class="p-2 flex-fill bd-highlight colorsecondary">
+              <p style="font-size: large;">I've graduated from Vellore Institute of Technology also known as VIT University located in Vellore with M.Tech Integrated specialization in Software Engineering with CGPA 8.58. I am so thankful for all the professors and friends I met there and worked with.</p>
+            </div>
+            <div class="p-2 flex-fill bd-highlight" style="margin: 5%;">
+              <img style="width: 350px; height: 250px;" id="change2" src="https://images.shiksha.com/mediadata/images/articles/1584528545phpdljDz1.jpeg">
+            </div>
+          </div>
+          <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
+            <div class="p-2 flex-fill bd-highlight" style="margin: 5%;">
+              <img style="width: 350px; height: 200px;" id="change2" src="https://www.seekajob.in/wp-content/uploads/2021/02/PowerSchool-Entry-level-Associate-Software-Engineer.png">
+            </div>
+            <div class="p-2 flex-fill bd-highlight colorsecondary">
+              <p style="font-size: large;">I've joined as an Engineering intern in Powerschool in August 2020 and continued to work as an full time employee from June 2021 to present. In the whole period I worked on Enrollment product of Powerschool. The tech stack i used while working here are Angular, Asp.Net MVC and WebApi along with GitLab, Sourcetree and Sql server.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--projects-->
+        <div class="projects" id="projects" style="margin: 10% 15% 10% 15%">
+          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">03. Some Things I’ve Built</h3>
+          <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
+            <div class="p-2 flex-fill bd-highlight colorsecondary">
+              <h1>Suggesto</h1>
+              <p style="font-size: large;">Suggesto is a one stop for movie suggestions and recommendations. Everyday one unique movie is suggested and users can also login, wishlist movies, follow their friends and share movies with them. We also show where the movie is streamed with direct OTT links, just one click watch on their repective OTT platforms. There are lot of features that are packed in it. Click below to check them out. This is built using Angular, Bootstrap and Firebase.</p>
+              <p>
+                <a href="https://github.com/MurariMahith/SuggestoMain" class="fa fa-github large"></a>
+                <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.jibpca" class="fa fa-mouse-pointer large"></a>
+              </p>
+            </div>
+            <div class="p-2 flex-fill bd-highlight" style="margin: 5%;">
+              <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.jibpca"><img id="change2" style="width: 250px; height: 250px;"  src="../../../assets/images/suggesto.png"></a>            
+            </div>
+          </div>
+          <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
+            <div class="p-2 flex-fill bd-highlight" style="margin: 5%;">   
+              <a href="https://risealoneyt.web.app/home">      
+                <img id="change2" style="width: 250px; height: 250px;"  src="../../../assets/images/risealoneyt.png">
+              </a> 
+            </div>
+            <div class="p-2 flex-fill bd-highlight colorsecondary">
+              <h1>Webapp for Youtuber : RiseAloneYt</h1>
+              <p style="font-size: large;">This is a supporting website for a Youtuber : RiseAloneYt. This is built using Angular, YoutubeAPI to retrieve channel and video details and Firebase for database, authentication and hosting. </p>
+              <p>
+                <a href="https://github.com/MurariMahith/RiseAloneyt" class="fa fa-github large"></a>
+                <a href="https://risealoneyt.web.app/home" class="fa fa-mouse-pointer large"></a>
+              </p>
+            </div>
+          </div>
+          <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
+            <div class="p-2 flex-fill bd-highlight colorsecondary">
+              <h1>Sg Photographi </h1>
+              <p style="font-size: large;">This is a demo project I've built while learning Django and python. Modules involve authentication, searching, booking order, wallpapers, news feed and admin acess. This is built using Django as backend and HTML, CSS and JavaScript.</p>
+              <p>
+                <a href="https://github.com/MurariMahith/newsgphoto" class="fa fa-github large"></a>
+                <a href="https://sgphotographi.pythonanywhere.com/" class="fa fa-mouse-pointer large"></a>
+              </p>
+            </div>
+            <div class="p-2 flex-fill bd-highlight" style="margin: 5%;">            
+              <a href="https://sgphotographi.pythonanywhere.com/"><img id="change2" style="width: 250px; height: 250px;"  src="../../../assets/images/sg.jpg"></a>
+            </div>
+          </div>
+          <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
+            <div class="p-2 flex-fill bd-highlight" style="margin: 5%;">
+              <img id="change2" style="width: 350px; height: 200px;"  src="../../../assets/images/crud.png">
+            </div>
+            <div class="p-2 flex-fill bd-highlight colorsecondary">
+              <h1>CRUD using Angular and .net Mvc and WebApi</h1>
+              <p style="font-size: large;">This is a learning project developed while learning Angular and Asp.Net MVC. This project involve all the Create, read, update and delete operations on data from angular frontend to .net backend using Rest APIs.</p>
+              <p>
+                <a href="https://github.com/MurariMahith/crud-using-angular-and-mvc" class="fa fa-github large"></a>
+              </p>
+            </div>
+          </div>
+          <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
+            <div class="p-2 flex-fill bd-highlight colorsecondary">
+              <h1>Multiple Instagram Bio</h1>
+              <p style="font-size: large;">This is a utility app to overcome the problem users face in instagram. Instagram allows users to have only one bio link, but users do have multiple bio links. So We provide a wall for each user in which users can add and delete any number of bios they want.</p>
+              <p><a href="https://multipleinstabio.web.app/get">onGoing project</a></p>
+            </div>
+            <div class="p-2 flex-fill bd-highlight" style="margin: 5%;">
+              <img style="width: 250px; height: 250px;"  src="../../../assets/images/mib.png">
+            </div>
+          </div>
+          <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
+            <div class="p-2 flex-fill bd-highlight" style="margin: 5%;">
+              <img id="change2" style="width: 250px; height: 250px;"  src="../../../assets/images/weather.jpg">
+            </div>
+            <div class="p-2 flex-fill bd-highlight colorsecondary">
+              <h1>WeatherAtt</h1>
+              <p style="font-size: large;">This is a weather app built using vanilla Js, html and Css in which users can search for weather of whatever city they want. Weather data is provided by openweathermap api service.</p>
+              <p>
+                <a href="https://github.com/MurariMahith/smallwebapps" class="fa fa-github large"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--skills-->
+        <div>
+          <h3 class="colorprimary text-center" id="skills" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">04. Skills and Technologies I know</h3>
+          <div class="skills" style="margin: 10%;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;flex-direction: row;">
+            <img src="../../../assets/skills/java.png" id="change" style="width: 150px;height: 150px;">
+            <img src="../../../assets/skills/python.png" id="change" style="width: 150px;height: 150px;">
+            <img src="../../../assets/skills/js.png" id="change" style="width: 150px;height: 150px;">
+            <img src="../../../assets/skills/angular.png" id="change" style="width: 150px;height: 150px;">
+            <img src="../../../assets/skills/mvc.png" id="change" style="width: 150px;height: 150px;">
+            <img src="../../../assets/skills/webapi.png" id="change" style="width: 150px;height: 150px;">
+            <img src="../../../assets/skills/django.jpg" id="change" style="width: 150px;height: 150px;">
+            <img src="../../../assets/skills/node.jpeg" id="change" style="width: 150px;height: 150px;">
+            <img src="../../../assets/skills/mean.png" id="change" style="width: 150px;height: 150px;">
+            <img src="../../../assets/skills/html.png" id="change" style="width: 150px;height: 150px;">
+            <img src="../../../assets/skills/css.png" id="change" style="width: 150px;height: 150px;">
+            <img src="../../../assets/skills/type.png" id="change" style="width: 150px;height: 150px;">
+
+          </div>
+        </div>
+
+        <!--touch-->
+        <div>
+          <div class="introduction" style="min-height: 50vh;max-height: 100vh;margin: 0% 15% 10% 15%">
+            <h1 class="colorprimary text-center" id="touch" style="margin: 0px;font-size: clamp(30px, 6vw, 60px);">Get in touch with me</h1>
+            <p class="colorsecondary" style="margin-top: 10px;">You can always connect with me via my instagram or you can also mail me. Most of my projects are open-source so, if any of you have any questions or just want to connect with me feel free to reach out. I'll be more than happy to help you guys out. </p>      
+            <br>
+            <app-social></app-social>
+            <br>
+            <div style="display: flex;justify-content: center;">
+              <a class="colorsub btn" (click)="gototop()">Go to Top</a>
+              <a class="colorsub btn" href="https://firebasestorage.googleapis.com/v0/b/mahith-portfolio.appspot.com/o/resume%20latest%208th%20july.pdf?alt=media&token=f82b7224-8a65-4f1a-ae00-4063c3135d1b">Resume</a>
+            </div>
+          </div>
+        </div>
+
+      </span>
+
+      <span *ngIf="isMobile">
+
+        <div class="about-me" id="about-me" style="margin: 10px">
+          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">01. About me</h3>
+          <div class="d-flex bd-highlight" style="flex-wrap: wrap;">
+            <div class="p-2 flex-fill bd-highlight colorsecondary">
+              <p style="font-size: large;">Hello! My name is Murari Mahith and I enjoy combining my skillset with my interests. I am currntly working as a fullstack developer in Powerschool India Pvt Ltd, since August 2020. <br><br>
+
+              I've graduated from VIT University, Vellore with Integrated M.Tech degree specialization in Software Engineering. I like to design and work on complex backends along with well designed frontends. <br><br>
+
+              Combining my interests in Movies with my skillset, I've built an app called Suggesto, which recently crossed 1400 downloads on google playstore.Check out more about Suggesto in projects section. <br><br>
+
+              Here are a few technologies I’ve been working on recently:</p>
+              <div style="display: flex;flex-wrap: wrap;flex-direction: row;gap: 10px;">
+                <p><i class="fa fa-caret-right"></i>Angular</p>
+                <p><i class="fa fa-caret-right"></i>.Net Mvc and WebApi</p>
+                <p><i class="fa fa-caret-right"></i>Django</p>
+                <p><i class="fa fa-caret-right"></i>Express and Node.js</p>
+                <p><i class="fa fa-caret-right"></i>TypeScript and JavaScript</p>
+              </div>
+              <div style="display: flex;flex-wrap: wrap;flex-direction: row;gap: 10px;justify-content: center;">
+                <img class="animated bounce" id="blur-text" style="width: 250px; height: 350px;"  src="../../../assets/images/me.jpeg">
+              </div>              
+            </div>
+          </div>
+        </div>
+
+        <!--experience-->
+        <div class="experience" id="experience" style="margin: 10% 0 10% 0">
+          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">02. Education and Experience</h3>
+          <br><br>
+          <div class="d-flex bd-highlight studyexpimg" style="background-image: url(https://images.shiksha.com/mediadata/images/articles/1584528545phpdljDz1.jpeg);">
+            <span style="backdrop-filter: brightness(0.3);padding: 3%;">
+              <div class="p-2 flex-fill bd-highlight">
+                <h6 class="colorsub text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">Study</h6><br><br>
+                <p style="font-size: large;">I've graduated from Vellore Institute of Technology also known as VIT University located in Vellore with M.Tech Integrated degree specialization in Software Engineering with CGPA 8.58. I am so thankful for all the professors and friends I met there and worked with.</p>
+              </div>
+            </span>
+          </div>
+          <div class="d-flex bd-highlight studyexpimg" style="background-image: url(https://www.seekajob.in/wp-content/uploads/2021/02/PowerSchool-Entry-level-Associate-Software-Engineer.png);">
+            <span style="backdrop-filter: brightness(0.3);padding: 10%;">
+              <div class="p-2 flex-fill bd-highlight">
+                <h6 class="colorsub text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">Experience</h6><br><br>
+                <p style="font-size: large;">I've joined as an Engineering intern in Powerschool in August 2020 and continued to work as a full time employee from June 2021 to present. In the whole period I worked on Enrollment product of Powerschool. The tech stack I used while working here are Angular, Asp.Net MVC and WebApi along with GitLab, Sourcetree and Sql server.</p>
+              </div>
+            </span>
+          </div>
+        </div>
+
+        <!--skills-->
+        <div>
+          <h3 class="colorprimary text-center" id="skills" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">03. Skills and Technologies I know</h3>
+          <div class="skills" style="margin: 10% 0 10% 0;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;flex-direction: row;">
+            <img src="../../../assets/skills/java.png" id="change mobileskill" style="width: 75px;height: 75px;">
+            <img src="../../../assets/skills/python.png" id="change mobileskill" style="width: 75px;height: 75px;">
+            <img src="../../../assets/skills/js.png" id="change mobileskill" style="width: 75px;height: 75px;">
+            <img src="../../../assets/skills/angular.png" id="change mobileskill" style="width: 75px;height: 75px;">
+            <img src="../../../assets/skills/mvc.png" id="change mobileskill" style="width: 75px;height: 75px;">
+            <img src="../../../assets/skills/webapi.png" id="change mobileskill" style="width: 75px;height: 75px;">
+            <img src="../../../assets/skills/django.jpg" id="change mobileskill" style="width: 75px;height: 75px;">
+            <img src="../../../assets/skills/node.jpeg" id="change mobileskill" style="width: 75px;height: 75px;">
+            <img src="../../../assets/skills/mean.png" id="change mobileskill" style="width: 75px;height: 75px;">
+            <img src="../../../assets/skills/html.png" id="change mobileskill" style="width: 75px;height: 75px;">
+            <img src="../../../assets/skills/css.png" id="change mobileskill" style="width: 75px;height: 75px;">
+            <img src="../../../assets/skills/type.png" id="change mobileskill" style="width: 75px;height: 75px;">
+
+          </div>
+        </div>
+
+        <!--projects-->
+        <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">04. Some Things I’ve Built</h3>
+        <div class="projects" id="projects" style="margin: 10% 5% 10% 5%;">
+
+          <div class="projectcardmain" style="background-image: url(../../../assets/images/suggesto.png);">
+            <div class="projectcard" style="padding: 10%;">
+              <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.jibpca" style="display: flex;text-decoration: none;color: inherit;">
+                <img style="width: 50px; height: 50px;"  src="../../../assets/images/suggesto.png">
+                <h1 style="margin-left: 10px;">Suggesto</h1>
+              </a>
+              <br>
+              <p style="font-size: large;">Suggesto is a one stop for movie suggestions and recommendations. Everyday one unique movie is suggested and users can also login, wishlist movies, follow their friends and share movies with them. We also show where the movie is streamed with direct OTT links, just one click watch on their repective OTT platforms. There are lot of features that are packed in it. Click below to check them out. This is built using Angular, Bootstrap and Firebase.</p>
+              <p>
+                <a href="https://github.com/MurariMahith/SuggestoMain" class="fa fa-github large"></a>
+                <a href="https://play.google.com/store/apps/details?id=xyz.appmaker.jibpca" class="fa fa-mouse-pointer large"></a>
+              </p>
+            </div>
+          </div>
+
+          <div class="projectcardmain" style="background-image: url(../../../assets/images/risealoneyt.png);">
+            <div class="projectcard" style="padding: 10%;">
+              <a href="https://risealoneyt.web.app/home" style="display: flex;text-decoration: none;color: inherit;">
+                <img style="width: 50px; height: 50px;"  src="../../../assets/images/risealoneyt.png">
+                <h1 style="margin-left: 10px;">RiseAloneYt</h1>
+              </a>
+              <br>
+              <p style="font-size: large;">This is a supporting website for a Youtuber : RiseAloneYt. This is built using Angular, YoutubeAPI to retrieve channel and video details and Firebase for database, authentication and hosting.</p>
+              <p>
+                <a href="https://github.com/MurariMahith/RiseAloneyt" class="fa fa-github large"></a>
+                <a href="https://risealoneyt.web.app/home" class="fa fa-mouse-pointer large"></a>
+              </p>
+            </div>
+          </div>
+
+          <div class="projectcardmain" style="background-image: url(../../../assets/images/sg.jpg);">
+            <div class="projectcard" style="padding: 10%;">
+              <a href="https://sgphotographi.pythonanywhere.com/" style="display: flex;text-decoration: none;color: inherit;align-items: center;">
+                <img style="width: 50px; height: 50px;"  src="../../../assets/images/sg.jpg">
+                <h1 style="margin-left: 10px;">Sg Photographi </h1>
+              </a>
+              <br>
+              <p style="font-size: large;">This is a demo project I've built while learning Django and python. Modules involve authentication, searching, booking order, wallpapers, news feed and admin acess. This is built using Django as backend and HTML, CSS and JavaScript.</p> 
+              <p>
+                <a href="https://github.com/MurariMahith/newsgphoto" class="fa fa-github large"></a>
+                <a href="https://sgphotographi.pythonanywhere.com/" class="fa fa-mouse-pointer large"></a>
+              </p>
+            </div>
+          </div>
+
+          <div *ngIf="!showAllProjects" style="display: flex;justify-content: center;">
+            <a class="colorsub btn" (click)="showAllProjects = true">Load More</a>
+          </div>
+
+          <span *ngIf="showAllProjects">
+            <div class="projectcardmain" style="background-image: url(../../../assets/images/crud.png);">
+              <div class="projectcard" style="padding: 10%;">
+                <a style="display: flex;text-decoration: none;color: inherit;">
+                  <!-- <img style="width: 50px; height: 50px;"  src="../../../assets/images/crud.png"> -->
+                  <h1 style="margin-left: 10px;">CRUD using Angular and .net Mvc and WebApi </h1>
+                </a>
+                <br>
+                <p style="font-size: large;">This is a learning project developed while learning Angular and Asp.Net MVC. This project involve all the Create, read, update and delete operations on data from angular frontend to .net backend using Rest APIs.</p>
+                <p>
+                  <a href="https://github.com/MurariMahith/crud-using-angular-and-mvc" class="fa fa-github large"></a>
+                </p>
+              </div>
+            </div>
+  
+            <div class="projectcardmain" style="background-image: url(../../../assets/images/mib.png);">
+              <div class="projectcard" style="padding: 10%;">
+                <a style="display: flex;text-decoration: none;color: inherit;">
+                  <!-- <img style="width: 50px; height: 50px;"  src="../../../assets/images/mib.png"> -->
+                  <h1 style="margin-left: 10px;">Multiple Instagram Bio</h1>
+                </a>
+                <br>
+                <p style="font-size: large;">This is a utility app to overcome the problem users face in instagram. Instagram allows users to have only one bio link, but users do have multiple bio links. So We provide a wall for each user in which users can add and delete any number of bios they want.</p>
+                <p>
+                  <a href="https://multipleinstabio.web.app/get">onGoing project</a>
+                </p>
+              </div>
+            </div>
+  
+            <div class="projectcardmain" style="background-image: url(../../../assets/images/weather.jpg);">
+              <div class="projectcard" style="padding: 10%;">
+                <a style="display: flex;text-decoration: none;color: inherit;">
+                  <img style="width: 50px; height: 50px;"  src="../../../assets/images/weather.jpg">
+                  <h1 style="margin-left: 10px;">WeatherAtt</h1>
+                </a>
+                <br>
+                <p style="font-size: large;">This is a weather app built using vanilla Js, html and Css in which users can search for weather of whatever city they want. Weather data is provided by openweathermap api service.</p>
+                <p>
+                  <a href="https://github.com/MurariMahith/smallwebapps" class="fa fa-github large"></a>
+                </p>
+              </div>
+            </div>
+          </span>
+
+          <div *ngIf="showAllProjects" style="display: flex;justify-content: center;">
+            <a class="colorsub btn" (click)="showAllProjects = false">Show less</a>
+          </div>
+          
+        </div>
+
+        
+        <!--touch-->
+        <div>
+          <div class="introduction" style="min-height: 50vh;max-height: 100vh;margin: 0% 15% 10% 15%">
+            <h1 class="colorprimary text-center" id="touch" style="margin: 0px;font-size: clamp(30px, 6vw, 60px);">Get in touch with me</h1>
+            <p class="colorsecondary" style="margin-top: 10px;">You can always connect with me via my instagram or you can also mail me. Most of my projects are open-source so, if any of you have any questions or just want to connect with me feel free to reach out. I'll be more than happy to help you guys out. </p>      
+            <br>
+            <app-social></app-social>
+            <br>
+            <div style="display: flex;justify-content: center;">
+              <a class="colorsub btn" (click)="gototop()">Go to Top</a>
+              <a class="colorsub btn" href="https://firebasestorage.googleapis.com/v0/b/mahith-portfolio.appspot.com/o/resume%20latest%208th%20july.pdf?alt=media&token=f82b7224-8a65-4f1a-ae00-4063c3135d1b">Resume</a>
+            </div>
+          </div>
+        </div>
+      </span>
+
+      <div style="display: flex;justify-content: center;">
+        <p class="colorsecondary" style="font-size: small;">Built by Murari Mahith. Design Inspiration from Brittany Chiang.</p>
+      </div>
+
+    </span>
+
+
+  </div>
+
+
+  <div *ngIf="!isMobile" class="minheight100 maxwidth10 p-2 bd-highlight animated fadeInUp" style="writing-mode: vertical-rl;
+  text-orientation: mixed;display: flex;justify-content: center;align-items: center;">
+    <div style="border-left: 2px solid rgb(136,146,176);height:25%;flex: 1;"></div>
+      <a href="mailto:mahithmurari@gmail.com" class="colorsub" style="text-decoration:none;margin-top: 5%;margin-bottom: 5%;">mahithmurari@gmail.com</a> 
+    <div style="border-left: 2px solid rgb(136,146,176);height: 25%;flex: 1;"></div>
+  </div>
+</div>

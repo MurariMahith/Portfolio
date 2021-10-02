@@ -1,0 +1,15 @@
+<div style="height: 10vh;">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+
+    <a  (click)="goto('about-me')">About Me</a>
+        <a  (click)="goto('experience')">Work and Study</a>
+        <a  (click)="goto('projects')">Projects</a>
+        <a  (click)="goto('skills')">Skills</a>
+        <a  (click)="goto('touch')">Get in touch</a>
+        <a href="https://firebasestorage.googleapis.com/v0/b/mahith-portfolio.appspot.com/o/resume%20latest%208th%20july.pdf?alt=media&token=f82b7224-8a65-4f1a-ae00-4063c3135d1b">Resume</a>
+  </div>
+  <span *ngIf="isMobile" class="animated bounceIn" style="font-size:30px;cursor:pointer;display: flex;justify-content: flex-end;" (click)="openNav()">
+    <img src="../../../assets/images/m.jpg" width="50px" height="50px" style="border-radius: 100px;margin: 5%;">
+  </span>
+</div>

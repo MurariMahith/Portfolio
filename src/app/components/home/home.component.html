@@ -2,7 +2,7 @@
   <div *ngIf="!isMobile" class="minheight100 maxwidth10 p-2 bd-highlight  animated fadeInDown">
     
     <span style="display: flex;justify-content: center;flex-wrap: wrap;color: rgb(136,146,176);">
-      <div style="border-left: 2px solid rgb(136,146,176);min-height: 70vh;"></div><br>
+      <div style="border-left: 2px solid rgb(136,146,176);min-height: 60vh;"></div><br>
       <div style="width: 100%;display: flex;justify-content: center;margin: 10%;" class="100w">
         <a href="https://github.com/MurariMahith" class="fa fa-github large"></a>
       </div>
@@ -23,10 +23,10 @@
   </div>
 
 
-  <div class="minheight100 scroll p-2 flex-grow-1 bd-highlight" style="max-height: 100vh;overflow: auto;">
+  <div class="minheight100 scroll p-2 flex-grow-1 bd-highlight" id="scroll" style="overflow: auto;">
 
     <span>
-      <div class="introduction animated fadeInRight" id="introduction" style="min-height: 90vh;max-height: 100vh;margin: 25vh 10% 10% 10%">
+      <div class="introduction animated fadeInRight" id="introduction" style="min-height: 80vh;max-height: 100vh;margin: 10% 10% 10% 10%">
         <p class="colorsub" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Hi, my name is</p>
         <h1 class="colorprimary" style="margin: 0px;font-size: clamp(40px, 8vw, 80px);">Murari Mahith</h1>
         <h1 class="colorsecondary" style="margin: 0px;font-size: clamp(40px, 8vw, 80px);">I believe in hardwork</h1>
@@ -42,8 +42,8 @@
       <span *ngIf="!isMobile">
                 
         <!--about me-->
-        <div class="about-me" id="about-me" style="max-height: 100vh;margin: 10px 15% 10% 15%">
-          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">01. About me</h3>
+        <div class="about-me colorsecondary" id="about-me" style="max-height: 100vh;margin: 10px 15% 10% 15%">
+          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">About me</h3>
           <div class="d-flex bd-highlight">
             <div class="p-2 flex-fill bd-highlight colorsecondary">
               <p style="font-size: large;">Hello! My name is Murari Mahith and I enjoy combining my skillset with my interests. I am working as a fullstack developer in Powerschool since August 2020. <br><br>
@@ -52,7 +52,8 @@
 
               I've clubbed my hobby of seeing movies with interest of building webapps and built an app called Suggesto, which recently crossed 1500 downloads on google playstore.Check out more about Suggesto below. <br><br>
 
-              Here are a few technologies I’ve worked on:</p>
+              </p>
+              <p>Here are a few technologies I’ve worked on:</p>
               <div style="display: flex;flex-wrap: wrap;flex-direction: row;gap: 10px;">
                 <p><i class="fa fa-caret-right"></i>Angular</p>
                 <p><i class="fa fa-caret-right"></i>.Net Mvc and WebApi</p>
@@ -60,17 +61,19 @@
                 <p><i class="fa fa-caret-right"></i>Express and Node.js</p>
                 <p><i class="fa fa-caret-right"></i>TypeScript and JavaScript</p>
               </div>
+              
             </div>
-            <div class="p-2 flex-fill bd-highlight container" style="margin: 5%;">
-              <img class="animated bounce" id="blur-text" style="width: 300px; height: 400px;"  src="../../../assets/images/me.jpeg">
+            <div class="p-2 flex-fill align-items-center bd-highlight container" style="margin: 5%;">
+              <img class="animated bounce" id="blur-text" style="width: 300px; height: 300px;border-radius: 10px;border: 2px solid #64ffda;padding: 10px;"  src="../../../assets/images/me.jpeg">
               <div class="hidden">Murari Mahith</div>
             </div>
           </div>
+
         </div>
 
         <!--experience-->
         <div class="experience" id="experience" style="margin: 10% 15% 10% 15%">
-          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">02. Education and Experience</h3>
+          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">Education and Experience</h3>
           <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
             <div class="p-2 flex-fill bd-highlight colorsecondary">
               <p style="font-size: large;">I've graduated from Vellore Institute of Technology also known as VIT University located in Vellore with M.Tech Integrated specialization in Software Engineering with CGPA 8.58. I am so thankful for all the professors and friends I met there and worked with.</p>
@@ -91,7 +94,7 @@
 
         <!--projects-->
         <div class="projects" id="projects" style="margin: 10% 15% 10% 15%">
-          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">03. Some Things I’ve Built</h3>
+          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">Some Things I’ve Built</h3>
           <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
             <div class="p-2 flex-fill bd-highlight colorsecondary">
               <h1>Suggesto</h1>
@@ -171,7 +174,7 @@
 
         <!--skills-->
         <div>
-          <h3 class="colorprimary text-center" id="skills" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">04. Skills and Technologies I know</h3>
+          <h3 class="colorprimary text-center" id="skills" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">Skills and Technologies I know</h3>
           <div class="skills" style="margin: 10%;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;flex-direction: row;">
             <img src="../../../assets/skills/java.png" id="change" style="width: 150px;height: 150px;">
             <img src="../../../assets/skills/python.png" id="change" style="width: 150px;height: 150px;">
@@ -209,7 +212,7 @@
       <span *ngIf="isMobile">
 
         <div class="about-me" id="about-me" style="margin: 10px">
-          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">01. About me</h3>
+          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">About me</h3>
           <div class="d-flex bd-highlight" style="flex-wrap: wrap;">
             <div class="p-2 flex-fill bd-highlight colorsecondary">
               <p style="font-size: large;">Hello! My name is Murari Mahith and I enjoy combining my skillset with my interests. I am currntly working as a fullstack developer in Powerschool India Pvt Ltd, since August 2020. <br><br>
@@ -227,7 +230,7 @@
                 <p><i class="fa fa-caret-right"></i>TypeScript and JavaScript</p>
               </div>
               <div style="display: flex;flex-wrap: wrap;flex-direction: row;gap: 10px;justify-content: center;">
-                <img class="animated bounce" id="blur-text" style="width: 250px; height: 350px;"  src="../../../assets/images/me.jpeg">
+                <img class="animated bounce" id="blur-text" style="width: 250px; height: 250px;border-radius: 10px;border: 2px solid #64ffda;padding: 10px;"  src="../../../assets/images/me.jpeg">
               </div>              
             </div>
           </div>
@@ -235,7 +238,7 @@
 
         <!--experience-->
         <div class="experience" id="experience" style="margin: 10% 0 10% 0">
-          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">02. Education and Experience</h3>
+          <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">Education and Experience</h3>
           <br><br>
           <div class="d-flex bd-highlight studyexpimg" style="background-image: url(https://images.shiksha.com/mediadata/images/articles/1584528545phpdljDz1.jpeg);">
             <span style="backdrop-filter: brightness(0.3);padding: 3%;">
@@ -257,7 +260,7 @@
 
         <!--skills-->
         <div>
-          <h3 class="colorprimary text-center" id="skills" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">03. Skills and Technologies I know</h3>
+          <h3 class="colorprimary text-center" id="skills" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">Skills and Technologies I know</h3>
           <div class="skills" style="margin: 10% 0 10% 0;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;flex-direction: row;">
             <img src="../../../assets/skills/java.png" id="change mobileskill" style="width: 75px;height: 75px;">
             <img src="../../../assets/skills/python.png" id="change mobileskill" style="width: 75px;height: 75px;">
@@ -276,7 +279,7 @@
         </div>
 
         <!--projects-->
-        <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">04. Some Things I’ve Built</h3>
+        <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">Some Things I’ve Built</h3>
         <div class="projects" id="projects" style="margin: 10% 5% 10% 5%;">
 
           <div class="projectcardmain" style="background-image: url(../../../assets/images/suggesto.png);">

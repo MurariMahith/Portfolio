@@ -14,6 +14,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
+    document.getElementById("scroll").style.maxHeight = window.screen.availHeight+"px";
+    document.getElementById("introduction").style.maxHeight = window.screen.availHeight+"px";
+    //introduction
+
+    console.log(window.screen.availHeight)
+    console.log(window.screen.height)
+
     if(screen.width <= 480) {     
       this.isMobile = true;
     }

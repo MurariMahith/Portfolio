@@ -1,14 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
+body::-webkit-scrollbar {
+    width: 0em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.001);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(169, 169, 169, 0.001);
+    outline: 1px solid slategrey;
+  }
+
+
 .minheight100
 {
-    min-height: 100vh;
+    //min-height: 100vh;
 }
 
 .maxwidth10
 {
     min-width: 6%;
     max-width: 6%;
+}
+
+.colorsub
+{
+    color: #64ffda;
 }
 

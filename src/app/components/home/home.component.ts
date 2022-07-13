@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
     document.getElementById("introduction").style.maxHeight = window.screen.availHeight+"px";
     //introduction
 
-    console.log(window.screen.availHeight)
-    console.log(window.screen.height)
+    // console.log(window.screen.availHeight)
+    // console.log(window.screen.height)
 
     if(screen.width <= 480) {     
       this.isMobile = true;

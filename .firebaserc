@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "mahith-portfolio"
-  }
+    "default": "mahith-murari",
+    "prod": "mahith-murari"
+  },
+  "targets": {}
 }

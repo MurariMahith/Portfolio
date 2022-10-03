@@ -27,16 +27,19 @@
 
     <span>
       <div class="introduction animated fadeInRight" id="introduction" style="min-height: 80vh;max-height: 100vh;margin: 10% 10% 10% 10%">
-        <p class="colorsub" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Hi, my name is</p>
+        <p class="colorsub" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Hey, I'm</p>
         <h1 class="colorprimary" style="margin: 0px;font-size: clamp(40px, 8vw, 80px);">Murari Mahith</h1>
-        <h1 class="colorsecondary" style="margin: 0px;font-size: clamp(40px, 8vw, 80px);">I believe in hardwork and consistency</h1>
-        <p class="colorsecondary" style="margin-top: 10px;">I am an Associate Software Engineer at Powershool India Pvt Ltd.<br>Apart from my work I like to build web apps.</p>      
+        <h1 class="colorsecondary" style="margin: 0px;font-size: clamp(40px, 8vw, 80px);">I believe in smartwork</h1>
+        <p class="colorsecondary" style="margin-top: 10px;">
+          Masters student at University of Florida, Gainesville. Master of Science in Computer Science. Expected to graduate in May 2024.
+        </p>      
         <br><a class="colorsub btn" (click)="goto('about-me')">About Me</a>
-        <a class="colorsub btn" (click)="goto('experience')">Work and Study</a>
+        <a class="colorsub btn" (click)="goto('experience')">Education</a>
+        <a class="colorsub btn" (click)="goto('experience')">Experience</a>
         <a class="colorsub btn" (click)="goto('projects')">Projects</a>
         <a class="colorsub btn" (click)="goto('skills')">Skills</a>
         <a class="colorsub btn" (click)="goto('touch')">Get in touch</a>
-        <a class="colorsub btn" href="https://firebasestorage.googleapis.com/v0/b/mahith-portfolio.appspot.com/o/resume%20latest%208th%20july.pdf?alt=media&token=f82b7224-8a65-4f1a-ae00-4063c3135d1b">Resume</a>
+        <a class="colorsub btn" target="_blank" href="https://firebasestorage.googleapis.com/v0/b/mahith-portfolio.appspot.com/o/Resume_mahithmurari_v6.pdf?alt=media&token=4128931b-8010-4bbb-96ac-4fbaf20e0534">Resume</a>
       </div>
 
       <span *ngIf="!isMobile">
@@ -46,11 +49,9 @@
           <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">About me</h3><br>
           <div class="d-flex bd-highlight">
             <div class="p-2 flex-fill bd-highlight colorsecondary">
-              <p style="font-size: large;">Hello! My name is Murari Mahith and I enjoy combining my skillset with my interests. I am working as a fullstack developer in Powerschool since August 2020. <br><br>
+              <p style="font-size: large;">Hey! I'm Mahith Murari and I'm currently a grad student at the University of Florida in computer science. I have 2 years of experience as a software engineer at PowerSchool, Bangalore.<br><br>
 
-              I've graduated from VIT University, Vellore with M.Tech Integrated specialization in Software Engineering. I like to design and work on complex backends without leaving well designed frontends. <br><br>
-
-              I've clubbed my hobby of seeing movies with interest of building webapps and built an app called Suggesto, which recently crossed 1500 downloads on google playstore.Check out more about Suggesto below. <br><br>
+              I graduated with Integrated M.Tech degree in Software Engineeriung at VIT University, Vellore, India. I worked on many projects in wide tech stack and you can see my work on github or below.<br><br>
 
               </p>
               <p>Here are a few technologies I’ve worked on:</p>
@@ -64,7 +65,7 @@
               
             </div>
             <div class="p-2 flex-fill align-items-center bd-highlight container" style="margin: 5%;">
-              <img class="animated bounce" id="blur-text" style="width: 300px; height: 300px;border-radius: 10px;border: 2px solid #64ffda;padding: 10px;"  src="../../../assets/images/me.jpeg">
+              <img class="animated bounce" id="blur-text" style="width: 300px; height: 300px;border-radius: 10px;border: 2px solid #64ffda;padding: 10px;"  src="../../../assets/images/me.jpg">
               <div class="hidden">Murari Mahith</div>
             </div>
           </div>
@@ -76,10 +77,10 @@
           <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">Education and Experience</h3>
           <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
             <div class="p-2 flex-fill bd-highlight colorsecondary">
-              <p style="font-size: large;">I've graduated from Vellore Institute of Technology also known as VIT University located in Vellore with M.Tech Integrated specialization in Software Engineering with CGPA 8.58. I am so thankful for all the professors and friends I met there and worked with.</p>
+              <p style="font-size: large;">I am currently in my first semester of MS in CS program at University of Florida, Gainesville, Florida. Expected to graduate on May 2024. Eligible to do internship in Summer 2023.</p>
             </div>
             <div class="p-2 flex-fill bd-highlight" style="margin: 5%;">
-              <img style="width: 350px; height: 250px;" id="change2" src="https://images.shiksha.com/mediadata/images/articles/1584528545phpdljDz1.jpeg">
+              <img style="width: 350px; height: 250px;" id="change2" src="https://campuslifesecurity.com/-/media/SEC/CSLS/Images/2019/06/UF30mill.jpg">
             </div>
           </div>
           <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
@@ -87,9 +88,20 @@
               <img style="width: 350px; height: 200px;" id="change2" src="https://www.seekajob.in/wp-content/uploads/2021/02/PowerSchool-Entry-level-Associate-Software-Engineer.png">
             </div>
             <div class="p-2 flex-fill bd-highlight colorsecondary">
-              <p style="font-size: large;">I've joined as an Engineering intern in Powerschool in August 2020 and continued to work as an full time employee from June 2021 to present. In the whole period I worked on Enrollment product of Powerschool. The tech stack i used while working here are Angular, Asp.Net MVC and WebApi along with GitLab, Sourcetree and Sql server.</p>
+              <p style="font-size: large;">I've joined as an Engineering intern in Powerschool in August 2020 and continued to work as an full time employee from June 2021 to July 2022. In the whole period I worked on Enrollment product of Powerschool. The tech stack I used while working here are Angular, Asp.Net MVC and WebApi along with GitLab, Sourcetree and Sql server.</p>
+              <p>Aug 2020 to July 2022</p>
             </div>
           </div>
+          <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
+            <div class="p-2 flex-fill bd-highlight colorsecondary">
+              <p style="font-size: large;">I've graduated from Vellore Institute of Technology also known as VIT University located in Vellore with M.Tech Integrated specialization in Software Engineering with CGPA 8.58. I am so thankful for all the professors and friends I met there and worked with.</p>
+              <p>Graduated in June 2021</p>
+            </div>
+            <div class="p-2 flex-fill bd-highlight" style="margin: 5%;">
+              <img style="width: 350px; height: 250px;" id="change2" src="https://images.shiksha.com/mediadata/images/articles/1584528545phpdljDz1.jpeg">
+            </div>
+          </div>
+
         </div>
 
         <!--projects-->
@@ -97,7 +109,7 @@
           <h3 class="colorprimary text-center" style="margin: 0px;font-size: clamp(20px, 4vw, 40px);">Some Things I’ve Built</h3>
           <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
             <div class="p-2 flex-fill bd-highlight colorsecondary">
-              <h1>Suggesto</h1>
+              <h1>Suggesto <span style="font-size: medium"> (1600+ downloads on google Playstore)</span></h1>
               <p style="font-size: large;">Suggesto is a one stop for movie suggestions and recommendations. Everyday one unique movie is suggested and users can also login, wishlist movies, follow their friends and share movies with them. We also show where the movie is streamed with direct OTT links, just one click watch on their repective OTT platforms. There are lot of features that are packed in it. Click below to check them out. This is built using Angular, Bootstrap and Firebase.</p>
               <p>
                 <a href="https://github.com/MurariMahith/SuggestoMain" class="fa fa-github large"></a>
@@ -173,7 +185,7 @@
           </div>
           <div class="d-flex bd-highlight" style="display: flex;justify-content: center;align-items: center;">
             <div class="p-2 flex-fill bd-highlight colorsecondary">
-              <h1>Meet people here</h1>
+              <h1>PowerPlay</h1>
               <p style="font-size: large;">This is a platform made to manage, create, organise and track events, clubs and chapters within any organisation. Based on the role of user logged In, they can create, organise, delete, attend clubs and events. Admins and management yusers see detailed graphical representation of participation in certain club or event.</p>
               <!-- <p><a href="https://multipleinstabio.web.app/get">onGoing project</a></p> -->
               <p><a href="https://github.com/MurariMahith/PowerPlay" class="fa fa-github large"></a></p>
@@ -404,7 +416,7 @@
             <br>
             <div style="display: flex;justify-content: center;">
               <a class="colorsub btn" (click)="gototop()">Go to Top</a>
-              <a class="colorsub btn" href="https://firebasestorage.googleapis.com/v0/b/mahith-portfolio.appspot.com/o/resume%20latest%208th%20july.pdf?alt=media&token=f82b7224-8a65-4f1a-ae00-4063c3135d1b">Resume</a>
+              <a class="colorsub btn" href="https://firebasestorage.googleapis.com/v0/b/mahith-portfolio.appspot.com/o/Resume_mahithmurari_v6.pdf?alt=media&token=4128931b-8010-4bbb-96ac-4fbaf20e0534">Resume</a>
             </div>
           </div>
         </div>

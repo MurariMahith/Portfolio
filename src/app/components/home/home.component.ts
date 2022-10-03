@@ -23,6 +23,7 @@ export class HomeComponent implements OnInit {
 
     if(screen.width <= 480) {     
       this.isMobile = true;
+      
     }
   }
 

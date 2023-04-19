@@ -11,6 +11,8 @@ export class HeaderComponent implements OnInit {
 
   isMobile : boolean = false;
 
+  resumeURL = "https://firebasestorage.googleapis.com/v0/b/mahith-portfolio.appspot.com/o/Mahith_Murari_Resume_apr18.pdf?alt=media&token=4875186c-5309-49e9-8133-ae99e100ad2a";
+
   ngOnInit() {
 
     if(screen.width <= 480) {     
